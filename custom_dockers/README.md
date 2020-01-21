@@ -36,3 +36,7 @@ if RUN is complete, this intermediate contrainer will be removed
 wokring on intermediate container too
 set primary command or script for containers
 and the cmd will be Startup Command
+
+## Cache
+when swap RUN commands, cache will not be used,
+rerun only that line change
