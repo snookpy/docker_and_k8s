@@ -1,4 +1,5 @@
 
+# Example with Redis server container
 
 Run build
 
@@ -20,17 +21,18 @@ Stop it
 ctrl + c
 ```
 
+## Command in Dockerfile
 
-## FROM
+### FROM
 FROM, is starting point of create Image like OS
 Look up local first if not found will download from docker server 
 
-## RUN
+### RUN
 RUN, is running on Build procress (docker build .)
 start intermediate container to complete procress
 if RUN is complete, this intermediate contrainer will be removed
 
-## CMD
+### CMD
 wokring on intermediate container too
 set primary command or script for containers
 and the cmd will be Startup Command
