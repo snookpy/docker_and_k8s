@@ -53,3 +53,11 @@ and the cmd will be Startup Command
 ## Cache
 when swap RUN commands, cache will not be used,
 rerun only that line change
+
+
+## Docker commit
+
+```
+docker commit -c'CMD ["redis-server"]' 0a5ebaacf79e
+```
+
