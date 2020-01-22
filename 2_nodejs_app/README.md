@@ -15,4 +15,8 @@ first is host port and then docker container port
 
 ## WORKDIR
 set starting dir
-/usr/app save place for linux based
+/usr/app is equal to "./" 
+//save place for linux based
+
+## minimizing cache 
+when change current line, will effect to all below code inside Dockerfile
