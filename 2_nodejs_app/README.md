@@ -12,3 +12,7 @@
 ## PORT Mapping
 docker run -p 5000:5000
 first is host port and then docker container port
+
+## WORKDIR
+set starting dir
+/usr/app save place for linux based
