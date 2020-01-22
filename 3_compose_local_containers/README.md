@@ -29,3 +29,17 @@ rebuild that
  docker run myimage
 
 
+### docker-compose up -d 
+Launch in background
+
+### docker-compsoe down
+Stop Containers
+
+### restart policies
+- no
+- always
+- on-failure
+- unless-stopped
+
+### docker-compose ps
+same docker ps but looking on current docker-compose.yml only

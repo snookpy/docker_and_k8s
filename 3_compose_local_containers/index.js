@@ -1,6 +1,6 @@
 const express = require("express")
 const redis = require("redis")
-
+const process = require('process')
 
 const app = express();
 const client = redis.createClient({
