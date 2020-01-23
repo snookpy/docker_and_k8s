@@ -29,3 +29,23 @@ First v is : Put a bookmark on node_modules folder if not node_modules from cont
 
 TODO : 
 Docker ignore some files or folders
+
+
+docker-compose with customfile
+build -> context: . # find location base
+    -> dockerfile: Dockerfile.dev # dockerfile filename 
+
+Run Test by override CMD
+
+```
+docker run <image id> npm run test
+```
+
+Live test 
+
+first build docker-compose
+
+then 
+```
+docker exec -it <container id> npm run test
+```
