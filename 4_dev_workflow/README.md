@@ -41,7 +41,7 @@ Run Test by override CMD
 docker run <image id> npm run test
 ```
 
-Live test 
+Live test
 
 first build docker-compose
 
@@ -49,3 +49,9 @@ then
 ```
 docker exec -it <container id> npm run test
 ```
+
+
+## React Production
+
+try to build project to get builded file and then remove 
+unused files like node_modules out for save disk
