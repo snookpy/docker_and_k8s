@@ -1,0 +1,31 @@
+# DEV -> TEST -> PROD
+ 
+
+ dev on local computer
+
+ test on travis ci
+
+ prod on elasticbeentalk aws
+
+
+### Dockerfile.dev for development only
+ command for custom dockerfile
+ 
+ ```
+docker build -f Dockerfile.dev .
+ ```
+Dockerfile for production
+
+
+## Docker Volume
+Docker Container refrence source code or files from local folder
+
+command
+```
+docker run -v /app/node_modules -v $(pwd):/app -p 3000:3000 <image id>
+```
+
+First v is : Put a bookmark on node_modules folder if not node_modules from container will be overided from volume
+
+TODO : 
+Docker ignore some files or folders
