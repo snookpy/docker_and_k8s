@@ -14,6 +14,7 @@ Each .yaml config file will create each Objects:
   - StatefulSet
   - ReplicaController
   - Pod, is for run Container
+  - Deployment Clostly Pods but good for development and production
   - Sevice, for Networking
 
 ### apiVersion
@@ -74,10 +75,38 @@ kubectl get services
 kubectl logs client-pod -p 
 ```
 
+### get detail
+```
+kubectl describe <pbject_type> <object name>
+```
+
+### delete pod
+```
+kubectl delete -f <config file>
+```
 ## Imperative Deployments
     Do exactly these steps to arrive at this container setup
 
 ## Declartive Deployments
     Out container setup should look like this, make it happen
 
+    Limit config update:
+        only can change image, 
+        cannot change port, containers number, name
 
+
+## Pods and Deployment Object types:
+### Pods 
+    single set of containers
+    Good for one-off dev purposes
+    Rarely used directly in production
+### Deployment
+ runs set of identical pods (one or more)
+ Monitors the state of each pod, updating as necessary
+ Good for dev
+ Good for production
+ will have `Pod Template` to create Pod
+ - template: every single Pod Config inside here
+ - replicas: number of different pods will have
+ - selector: similar in Services
+    - matchLabels: handle on label Pod Configs will have multiple pods

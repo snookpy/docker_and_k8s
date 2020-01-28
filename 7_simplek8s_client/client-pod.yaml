@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: client
-      image: nuenook/multi-client
+      image: nuenook/multi-worker
       ports:
         - containerPort: 3000
