@@ -56,3 +56,28 @@ each api version defiens a different set of Objects
     - nodePort: is typing out on Browser (mapping Host port)
 - `LoadBalancer`
 - `Ingress`
+
+
+## kubectl
+
+### Feed a config file to Kubectl
+```
+kubectl apply -f <filename>
+```
+
+### Print the status of all running pods, services
+```
+kubectl get pods
+
+kubectl get services
+
+kubectl logs client-pod -p 
+```
+
+## Imperative Deployments
+    Do exactly these steps to arrive at this container setup
+
+## Declartive Deployments
+    Out container setup should look like this, make it happen
+
+
