@@ -84,6 +84,11 @@ kubectl describe <pbject_type> <object name>
 ```
 kubectl delete -f <config file>
 ```
+
+### update image in pod
+```
+kubectl set image <object_type>/<object_name> <container_name>=<new_mage to use>
+```
 ## Imperative Deployments
     Do exactly these steps to arrive at this container setup
 
