@@ -43,3 +43,9 @@ resouces: requests: storage: 2Gi -> find storeafe instance and have 2 gigabytes
 ```
 kubectl create secret generic(typeof secret) <secret_name> --from-literal key=value
 ```
+
+## Nginx Ingress
+using ingress-nginx from Github not kubernetes-ingress.
+In this tutorial go to Local and Google Cloud.
+
+## What the ingress-service ?

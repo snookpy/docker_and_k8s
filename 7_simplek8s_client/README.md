@@ -15,7 +15,7 @@ Each .yaml config file will create each Objects:
   - ReplicaController
   - Pod, is for run Container
   - Deployment Clostly Pods but good for development and production
-  - Sevice, for Networking
+  - Service, for Networking
 
 ### apiVersion
 each api version defiens a different set of Objects
@@ -55,8 +55,8 @@ each api version defiens a different set of Objects
     - port: is for `other Pod` needs connect to this Pod
     - targetPort: target to container's port
     - nodePort: is typing out on Browser (mapping Host port)
-- `LoadBalancer`
-- `Ingress`
+- `LoadBalancer`: lagacy thing, getting network traffic into a cluster
+- `Ingress`: exposes set of services to the outside world
 
 
 ## kubectl
