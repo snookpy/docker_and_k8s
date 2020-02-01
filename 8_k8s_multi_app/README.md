@@ -49,3 +49,11 @@ using ingress-nginx from Github not kubernetes-ingress.
 In this tutorial go to Local and Google Cloud.
 
 ## What the ingress-service ?
+
+
+
+## GET ADMIN TOKEN
+```
+kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user | awk '{print $1}')
+
+```
